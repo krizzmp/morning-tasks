@@ -1,8 +1,8 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 import { NextApiRequest, NextApiResponse } from "next";
 import { getRepository } from "typeorm/index";
-import { ensureConnection } from "../../utils/ensureConnection";
-import { DBTestEntity } from "../../entities/DBTestEntity";
+import { ensureConnection } from "@/utils/ensureConnection";
+import { DBTestEntity } from "@/entities/DBTestEntity";
 
 export default async (req: NextApiRequest, res: NextApiResponse) => {
   await ensureConnection();

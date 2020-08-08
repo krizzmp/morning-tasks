@@ -3,7 +3,7 @@ import {
   ConnectionOptions,
   getConnectionManager,
 } from "typeorm/index";
-import { DBTestEntity } from "../entities/DBTestEntity";
+import { DBTestEntity } from "@/entities/DBTestEntity";
 
 const options = {
   default: {
