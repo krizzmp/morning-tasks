@@ -1,21 +1,8 @@
-import {
-  Connection,
-  ConnectionOptions,
-  getConnectionManager,
-} from "typeorm/index";
-import { DBTestEntity } from "@/entities/DBTestEntity";
+import {Connection, getConnectionManager,} from "typeorm/index";
+import {connectionConfig} from "@/connectionConfig";
 
 const options = {
-  default: {
-    type: "mysql",
-    host: "localhost",
-    port: 3306,
-    username: "wp-master",
-    password: "secret",
-    database: "morning_tasks",
-    entities: [DBTestEntity],
-    synchronize: true,
-  } as ConnectionOptions,
+  default: connectionConfig,
 };
 
 function entitiesChanged(prevEntities: any[], newEntities: any[]): boolean {
