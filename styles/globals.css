@@ -4,6 +4,22 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  --bg-base: hsl(209, 61%, 12%);
+  --bg-base-300: hsl(210, 60%, 4%);
+  --bg-base-900: hsl(210, 30%, 32%);
+  --fg-base: hsl(210, 100%, 93%);
+
+  --bg-0:#010305;
+  --bg-10:#0c1f31;
+  --bg-20:#1f4d7c;
+  --bg-30:#2c68ad;
+  --bg-40:#3570c3;
+  --bg-50:#4074cf;
+  --bg-60:#4875d7;
+  --bg-70:#4d73dd;
+  --bg-80:#4f72e1;
+  --bg-90:#5172e5;
+  --bg-100:#5373e8;
 }
 
 a {
